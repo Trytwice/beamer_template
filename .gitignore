@@ -1,3 +1,4 @@
 /auto
+/static
 beamer.*
 !beamer.tex

@@ -12,6 +12,10 @@
 \setCJKmainfont{Source Han Sans CN}
 \usefonttheme{professionalfonts}
 
+\usepackage{multicol}
+
+\setbeamercovered{transparent=15}
+
 \begin{document}
 \metroset{block=fill}
 
@@ -42,5 +46,77 @@
   \, of the function.
 \end{frame}
 
+\begin{frame}[t]{Flash Card} \vspace{4pt}
+  $\sqrt{x^{2}}=$\\ \vspace{10pt}
+  \begin{enumerate}[(A)]
+  \item $x$
+  \item $-x$
+  \item $|x|$
+  \item undefined
+  \end{enumerate}
+
+\end{frame}
+
+\begin{frame}[t]{Flash Card2} \vspace{4pt}
+
+  \begin{columns}[onlytextwidth]
+    \column{0.5\textwidth}
+    $\sqrt{x^{2}}=$\\ \vspace{10pt}
+    \begin{enumerate}[(A)]
+    \item $x$
+    \item $-x$
+    \item $|x|$
+    \item undefined
+    \end{enumerate}
+
+    \column{0.5\textwidth}
+    \only<3> {
+      $\sqrt{x^{2}}=
+      \begin{cases}
+        -x, & x<0\\
+        x, & x \geq 0
+      \end{cases}$\\ [4pt]
+    }
+    \only<2-> {
+      \includegraphics[scale=0.25]{./static/profile}
+    }
+  \end{columns}
+
+\end{frame}
+
+\begin{frame}[t]{multi columns} \vspace{4pt}
+
+  \begin{enumerate}
+    \begin{multicols}{3}
+    \item a
+    \item a
+    \item a
+    \item a
+    \item a
+      \onslide<2->{
+      \item a
+      \item a
+      \item a
+      \item a
+      \item a
+      \item a
+      }
+      \onslide<3->{
+      \item a
+      \item a
+      \item a
+      \item a
+      \item a
+      \item a
+      }
+    \end{multicols}
+  \end{enumerate}
+
+\end{frame}
+
+\begin{frame}[standout]
+  \flushleft
+  Thanks!
+\end{frame}
 
 \end{document}
